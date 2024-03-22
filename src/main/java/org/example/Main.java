@@ -30,23 +30,23 @@ public class Main {
             System.out.println(pessoas[i].toString());
         }
 
-        Pessoa maisVelho = pessoas[0];
+        Pessoa maisVelha = pessoas[0];
         Pessoa maisNova = pessoas[0];
 
-        calcularPessoaMaisVelha(pessoas, maisVelho);
+        calcularPessoaMaisVelha(pessoas, maisVelha);
         calcularPessoaMaisNova(pessoas, maisNova);
         calculoMediaDasIdades(pessoas);
 
     }
 
-    private static void calcularPessoaMaisVelha(Pessoa[] pessoas, Pessoa maisVelho) {
+    private static void calcularPessoaMaisVelha(Pessoa[] pessoas, Pessoa maisVelha) {
         for (int i = 1; i < pessoas.length; i++) {
-            if (pessoas[i].getIdade() > maisVelho.getIdade()) {
-                maisVelho = pessoas[i];
+            if (pessoas[i].getIdade() > maisVelha.getIdade()) {
+                maisVelha = pessoas[i];
             }
 
         }
-        System.out.println(maisVelho.getNome() + " é o mais velho.");
+        System.out.println(maisVelha.getNome() + " é o mais velho.");
     }
 
     private static void calcularPessoaMaisNova(Pessoa[] pessoas, Pessoa maisNova) {
